@@ -8,7 +8,7 @@ import {
   FormGroup,
   ControlLabel
 } from 'react-bootstrap';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 
@@ -127,7 +127,7 @@ export default class Login extends Component {
         <Grid className="page-inner-wrap">
           <Row>
             <Col xs={10} sm={6} className="login-form">
-              <h1 className="profinder-heading">Profinder</h1>
+              <h1 className="profinder-heading">Profinder<span className="signup-link"><Link to={'/signup'} >SignUP</Link></span></h1>
               <form
                 className="admin-login-side"
                 onKeyDown={e => {
