@@ -2,6 +2,7 @@
   "name": "profinder-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://104.251.216.241/demo/profinder",
   "dependencies": {
     "axios": "^0.18.0",
     "jquery": "^3.3.1",

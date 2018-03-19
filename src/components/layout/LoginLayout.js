@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import LoginFooter from './LoginFooter';
+// import LoginFooter from './LoginFooter';
 
 const LoginLayout = ({ component: Component, ...rest }) => {
   return (

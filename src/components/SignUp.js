@@ -84,6 +84,7 @@ export default class Login extends Component {
         <Grid className="page-inner-wrap">
           <Row>
             <Col xs={10} sm={6} className="login-form">
+              <h1 className="profinder-heading">Profinder</h1>
               <form
                 className="admin-login-side"
                 onKeyDown={e => {

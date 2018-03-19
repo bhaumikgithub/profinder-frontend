@@ -5,7 +5,8 @@ import {
   Grid,
   Col,
   Row,
-  FormGroup
+  FormGroup,
+  ControlLabel
 } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 import FacebookLogin from 'react-facebook-login';
@@ -126,6 +127,7 @@ export default class Login extends Component {
         <Grid className="page-inner-wrap">
           <Row>
             <Col xs={10} sm={6} className="login-form">
+              <h1 className="profinder-heading">Profinder</h1>
               <form
                 className="admin-login-side"
                 onKeyDown={e => {
@@ -139,6 +141,9 @@ export default class Login extends Component {
               >
                 <Col xs={12} sm={10} md={8} className="login-details-block">
                   <FormGroup className="custom-fromgrp">
+                    <ControlLabel className="custom-form-control-label signup-form-label">
+                      Email:
+                    </ControlLabel>
                     <FormControl
                       className="login-control"
                       type="email"
@@ -150,6 +155,9 @@ export default class Login extends Component {
                     <span className="custom-addon">*</span>
                   </FormGroup>
                   <FormGroup className="custom-fromgrp">
+                    <ControlLabel className="custom-form-control-label signup-form-label">
+                      Password:
+                    </ControlLabel>
                     <FormControl
                       className="login-control"
                       type="password"
@@ -178,7 +186,7 @@ export default class Login extends Component {
                   appId="709825285894910"
                   autoLoad={true}
                   fields="name,email,picture"
-                  cssClass="my-facebook-button-class"
+                  cssClass="my-facebook-button-class login-with-facebook-btn"
                   icon="fa-facebook"
                   callback={this.responseFacebook.bind(this)} 
                 />

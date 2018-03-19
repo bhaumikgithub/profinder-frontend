@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Button,
-  FormControl,
-  Grid,
-  Col,
-  Row,
-  FormGroup
-} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 
 // Import helper
@@ -59,14 +52,15 @@ export default class Login extends Component {
       return <Redirect push to="/" />;
     }
     return (
-      <div className="login-wrap">
-        Welcome!! {this.state.userName}
-        <Button
+      <div className="welcome-wrap">
+        <h1>Welcome!! {this.state.userName}
+          <Button
             className="logout-btn btn btn-orange"
             onClick={event => this.handleLogout(event)}
           >
             <i className="fa fa-logout" /> Logout
           </Button>
+        </h1>
       </div>
       
     );
