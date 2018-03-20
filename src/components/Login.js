@@ -191,7 +191,7 @@ export default class Login extends Component {
                   callback={this.responseFacebook.bind(this)} 
                 />
                 <GoogleLogin
-                  clientId="232824250945-es5vbthnf40ugj21r1gmb5u2bp3mi628.apps.googleusercontent.com"
+                  clientId="232824250945-302hm1g6kd868iutcq4kkdb8nj75upi6.apps.googleusercontent.com"
                   buttonText="Login With Google"
                   onSuccess={this.responseGoogle}
                   onFailure={this.responseGoogle}
